@@ -12,62 +12,70 @@
 <body>
 
 <center>
-    <table border="0" cellspacing="0" cellpadding="0" width="1000" height="180" style="background-color: rgb(229, 202, 253); border-radius: 2.5rem;"><tr><th>
-    <img src="https://upload.wikimedia.org/wikipedia/en/0/05/TSRTC_LOGO.png" alt="" width="50" height="50">
-    <h1 style="color:blue">TELANGANA STATE ROAD TRANSPORT CORPORATION</h1>
+<!--     <table border="0" cellspacing="0" cellpadding="0" width="1000" height="180" style="background-color: rgb(229, 202, 253); border-radius: 2.5rem;"><tr><th> -->
+<!--     <img src="https://upload.wikimedia.org/wikipedia/en/0/05/TSRTC_LOGO.png" alt="" width="50" height="50"> -->
+    <h1 style="color:blue"> STATE ROAD TRANSPORT CORPORATION</h1>
     <h1>GENERAL BUS PASS APPLICATION</h1>
-    </th></tr></table>
+<!--     </th></tr></table> -->
 </center>
 
-<H3 style="margin-left: 300px;">APPLICANT DETAILS -----------------------------------------------------------------------------------------------------------------------------</H3>
-
+<!-- <H3 style="margin-left: 300px;">APPLICANT DETAILS -----------------------------------------------------------------------------------------------------------------------------</H3> -->
+<fieldset> <legend>APPLICANT DETAILS</legend>
 <center>
     <table border="0" cellspacing="0" cellpadding="0" width="1000" height="220" style="background-color: wheat; border-radius: 0.5rem;" class="black-box"><tr><th>
     <form action="./Lobby.html">
-    <label for="fullName">Name * <input type="text" id="fullName" name="fullName" required></label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label for="fullName">Father's/Guardian's Name * <input type="text" id="fullName" name="fullName" required></label><br><br>
+    <label for="fullName">Name * <input type="text" id="fullName" name="fullName" required></label> <br><br>
+    <label for="fullName">Father's/Guardian's Name * <input type="text" id="fullName" name="fullName" required></label><br><br>
 
-    <label for="dob">Date of Birth * <input type="date" id="dob" name="dob" required></label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <label for="gender">Gender *&nbsp;&nbsp;<input type="radio" id="gender" required>Male <input type="radio" id="gender" required>Female</label> <br><br>
+    <label for="dob">Date of Birth * <input type="date" id="dob" name="dob" required></label> <br><br>
+<!--     <label for="gender">Gender *;;<input type="radio" id="gender" required>Male <input type="radio" id="gender" required>Female</label> <br><br> -->
+    <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="male" required>
+    <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Female</label><br><br>
 
-    <label for="age">Age as on: <input type="day" maxlength="1" size="1" id="age"> Year(s)<input type="day" maxlength="1" size="1" id="age"> Month(s)<input type="day" maxlength="1" size="1" id="age"> Day(s)</label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+    <label for="age">Age as on: <input type="day" maxlength="1" size="1" id="age"> Year(s)<input type="day" maxlength="1" size="1" id="age"> Month(s)<input type="day" maxlength="1" size="1" id="age"> Day(s)</label> <br><br>
     <label for="Aadhaar">Aadhaar No : <input type="tel" id="Aadhaar"></label> <br><br>
 
-    <label for="mobile">Mobile Number * <input type="tel" id="mobile" name="mobile" required></label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <label for="mobile">Mobile Number * <input type="tel" id="mobile" name="mobile" required></label> <br><br>
     <label for="email">Email ID * <input type="email" id="email" name="email" required></label> <br><br>
 
-    <label for="file">Photo * <input type="file" id="file"> </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <label for="file">Photo * <input type="file" id="file"> </label><br><br>
     </th></tr></table>
+    </fieldset>
 </center>
     
-<H3 style="margin-left: 300px;">RESIDENTIAL APPLICATION DETAILS -----------------------------------------------------------------------------------------------------</H3>
-
+<!-- <H3 style="margin-left: 300px;">RESIDENTIAL APPLICATION DETAILS -----------------------------------------------------------------------------------------------------</H3> -->
+<fieldset> <legend>RESIDENTIAL APPLICATION DETAILS</legend>
 <center>
     <table border="0" cellspacing="0" cellpadding="0" width="1000" height="150" style="background-color: wheat; border-radius: 0.5rem;" class="black-box"><tr><th>
-    <label for="address">Applicant's Address * <textarea name="address" id="address" required maxlength="4" size="4"></textarea></label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <label for="address">Applicant's Address * <textarea name="address" id="address" required maxlength="4" size="4"></textarea></label> <br><br>
     <label for="District">District * <select name="District" id="District" required>
         <option value="District"> HYDERABAD </option></select>
     </label> <br><br>
 
     <label for="mandal">Mandal * <select name="mandal" id="mandal" required>
         <option value="mandal">HYDERABAD</option>
-    </select></label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    </select></label> <br><br>
 
     <label for="village">Village * <select name="village" id="village" required>
         <option value="village">HYDERABAD</option>
     </select></label> <br><br>
 
-    <label for="pincode">Pincode * <input type="text" id="pincode" name="pincode" required></label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <label for="pincode">Pincode * <input type="text" id="pincode" name="pincode" required></label> <br><br>
     </th></tr></table>
+    </fieldset>
 </center>
 
-<H3 style="margin-left: 300px;">PASS TYPE DETAILS --------------------------------------------------------------------------------------------------------------------------------</H3>
-
+<!-- <H3 style="margin-left: 300px;">PASS TYPE DETAILS --------------------------------------------------------------------------------------------------------------------------------</H3> -->
+<fieldset> <legend>PASS TYPE DETAILS</legend>
 <center>
     <table border="0" cellspacing="0" cellpadding="0" width="1000" height="90" style="background-color: wheat; border-radius: 0.5rem;" class="black-box"><tr><th>
     <label for="city">City * <select name="city" id="city" required>
         <option value="city"> HYDERABAD </option></select>
-    </label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    </label> <br><br>
     <br><br>
     
     <label for="passType">Pass Type * <select name="passType" id="passType" required>
@@ -78,24 +86,25 @@
         <option value="passType"> GENERAL METRO EXPRESS ROUTE PASS MTLY</option>
         <option value="passType"> METRO EXPRESS PASS </option>
         <option value="passType"> METRO DELUXE PASS </option>
-    </select> </label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    </select> </label> <br><br>
     </th></tr></table>
+    </fieldset>
 </center>
 
-<H3 style="margin-left: 300px;">MODE OF PAYMENT & PASS COLLECTION -----------------------------------------------------------------------------------------------</H3>
-
+<!-- <H3 style="margin-left: 300px;">MODE OF PAYMENT & PASS COLLECTION -----------------------------------------------------------------------------------------------</H3> -->
+<fieldset> <legend>MODE OF PAYMENT & PASS COLLECTION</legend>
 <center>
     <table border="0" cellspacing="0" cellpadding="0" width="1000" height="150" style="background-color: wheat; border-radius: 0.5rem;" class="black-box"><tr><th>
     <label for="Payment">Payment Mode * <select name="Payment" id="Payment" required>
         <option value="Payment"> Select Payment Mode </option>
         <option value="Payment"> Payment at Counter </option></select>
-    </label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    </label> <br><br>
     <br><br>
 
     <label for="Delivery">Pass Delivery Mode * <select name="Delivery" id="Delivery" required>
         <option value="Delivery"> Select Pass Delivery Mode </option>
         <option value="Delivery"> At Counter </option></select>
-    </label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    </label> <br><br>
     <br><br>
 
     <label for="center">Center at which you want to collect pass * <select name="center" id="center" required>
@@ -105,13 +114,14 @@
         <option value="center"> RTC SR NAGAR -- HYD [30/05/2025] </option>
         <option value="center"> RTC KOTI -- HYD [30/05/2025] </option>
         <option value="center"> RTC JBS -- HYD [30/05/2025] </option></select>
-    </label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    </label> <br><br>
     <br><br>
     </th></tr></table>
+    </fieldset>
 </center>
 <br><br>
 <center>
-    <label for="Human"><input type="checkbox" id="Human" required>&nbsp;&nbsp;&nbsp; I'm not a robot </label>  &nbsp;&nbsp;&nbsp; <img src="https://getsitecms.com/pics/getsitecms.com/fb-800x600-products/215/215-1647270695-5540935.png" width="30" height="20"><br><br>
+    <label for="Human"><input type="checkbox" id="Human" required> I'm not a robot </label>  <img src="https://getsitecms.com/pics/getsitecms.com/fb-800x600-products/215/215-1647270695-5540935.png" width="30" height="20"><br><br>
     <input type="submit" value="SUBMIT FORM"><br><br><br>
 </center>
 
